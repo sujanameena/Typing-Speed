@@ -124,15 +124,7 @@
             <div id="thankYouMsg" class="hidden">Thank you for attending the exam.</div>
         </div>
 
-        <!-- Row 3: Test Statistics -->
-        <div class="row stats-row">
-            <h2>Test Statistics</h2>
-            <div id="stats">
-                <p>Words Typed: <span id="wordsTyped">0</span></p>
-                <p>Paragraph:</p>
-                <div class="paragraph-box" id="paragraphBox"></div>
-            </div>
-        </div>
+       
     </div>
 
     <style>
@@ -314,7 +306,7 @@
     Its invocation of the SC/ST (Prevention of Atrocities) Act for unlawful evictions and a three-tier system for
     redress also provide a safety net rarely available to these communities.`;
         document.getElementById('givenText').textContent = givenParagraph;
-        document.getElementById('paragraphBox').textContent = givenParagraph;
+        // document.getElementById('paragraphBox').textContent = givenParagraph;
 
         // Disable copy, paste, cut, context menu on given text and textarea
         const givenTextDiv = document.getElementById('givenText');
@@ -361,10 +353,10 @@
         }
 
         // Word count logic
-        typingArea.addEventListener('input', () => {
-            const words = typingArea.value.trim().split(/\s+/).filter(Boolean);
-            document.getElementById('wordsTyped').textContent = words.length;
-        });
+        // typingArea.addEventListener('input', () => {
+        //     const words = typingArea.value.trim().split(/\s+/).filter(Boolean);
+        //     document.getElementById('wordsTyped').textContent = words.length;
+        // });
 
         // Submit logic
         const submitBtn = document.getElementById('submitBtn');
