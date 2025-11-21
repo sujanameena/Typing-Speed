@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThankYou</title>
+</head>
+
+<body>
+    <div class="thankYouMsg">
+        <h1 class="thankYou">Thank You!</h1>
+    </div>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffe082 100%);
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .thankYou {
+            font-size: 3em;
+            color: #121212;
+            animation: slideIn 1s ease-out;
+        }
+
+        .thankYouMsg {
+            text-align: center;
+            margin-top: 0;
+            padding: 36px 48px;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffe082 100%);
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            backdrop-filter: blur(6px);
+        }
+    </style>
+
+    <style>
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</body>
+
+</html>
